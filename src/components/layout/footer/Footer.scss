@@ -1,0 +1,18 @@
+@import '../../../App.scss';
+
+.footer {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0px 10px 129px;
+    border-top: 1px solid #DEDEDE;
+
+    @include mobile {
+        position: unset;
+    }
+}

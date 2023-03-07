@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;1,400;1,500&family=Lato:wght@100;300;400&family=Pacifico&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$bg-primary: #191718;
+$text-white: #fff;
+$text-primary: #AAAAAA;
+
+.app {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arimo', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Roboto', monospace;
+
+  &__rightBar {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    // responsive
+    .app__container {
+      // margin: 0 129px;
+      padding: 0;
+    }
+  }
+}
+
+@mixin mobile {
+  @media (max-width:480px) {
+    @content;
+  }
+}
+
+@mixin norPC {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}

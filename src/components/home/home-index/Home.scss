@@ -1,0 +1,10 @@
+@import '../.../../../../App.scss';
+
+.home {
+    margin: 0 50px;
+
+    @include mobile {
+        margin: 0px;
+    }
+
+}

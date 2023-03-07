@@ -1,0 +1,41 @@
+@import '../../../App.scss';
+
+.banner {
+    width: 100%;
+    height: 210px;
+    text-align: center;
+    background-color: #EFEFEF;
+    overflow: hidden;
+
+    @include mobile {
+        height: unset;
+    }
+
+    .banner-title {
+        padding-top: 30px;
+        font-size: 18px;
+        line-height: 21.09px;
+        font-weight: 700;
+        color: #000000;
+
+        @include mobile {
+            margin: 0px;
+        }
+
+    }
+
+    .banner-content {
+        height: 95px;
+        margin: 18px 185px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+
+        @include mobile {
+            margin: 10px 10px 0px;
+            height: unset;
+            text-align: initial;
+        }
+
+    }
+}
